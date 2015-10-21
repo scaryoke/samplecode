@@ -1,0 +1,5 @@
+C:\Dev\Sample\Sample\bin\Sample.dll
+C:\Dev\Sample\Sample\bin\Sample.pdb
+C:\Dev\Sample\Sample\obj\Release\Sample.dll
+C:\Dev\Sample\Sample\obj\Release\Sample.pdb
+C:\Dev\Sample\Sample\obj\Release\Sample.csprojResolveAssemblyReference.cache

@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9D986136-F37F-4699-9128-EF9556F82DBC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sample</RootNamespace>
+    <AssemblyName>Sample</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Logout.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="UserControls\AlternateContactUC.ascx" />
+    <Content Include="UserControls\CompanyUC.ascx" />
+    <Content Include="UserControls\EmployeeUC.ascx" />
+    <Content Include="UserControls\MedicareUC.ascx" />
+    <Content Include="UserControls\PolicyTypeUC.ascx" />
+    <Content Include="WebPages\AlternateContact\EditAlternateContact.aspx" />
+    <Content Include="WebPages\AlternateContact\SearchAlternateContact.aspx" />
+    <Content Include="WebPages\Company\AddCompany.aspx" />
+    <Content Include="WebPages\Company\CompanyMenu.aspx" />
+    <Content Include="WebPages\Company\EditCompany.aspx" />
+    <Content Include="WebPages\Company\SearchCompanies.aspx" />
+    <Content Include="WebPages\Customer\CustomerMenu.aspx" />
+    <Content Include="WebPages\Employee\AddEmployee.aspx" />
+    <Content Include="WebPages\Employee\EditEmployee.aspx" />
+    <Content Include="WebPages\Employee\EmployeeMenu.aspx" />
+    <Content Include="WebPages\Employee\SearchEmployees.aspx" />
+    <Content Include="WebPages\Medicare\AddMedicare.aspx" />
+    <Content Include="WebPages\Medicare\UpdateMedicare.aspx" />
+    <Content Include="WebPages\PolicyType\PolicyTypeMenu.aspx" />
+    <Content Include="WebPages\PolicyType\SearchPolicyTypes.aspx" />
+    <Content Include="WebPages\PolicyType\UpdatePolicyType.aspx" />
+    <Content Include="WebPages\Policy\AddPolicy.aspx" />
+    <Content Include="WebPages\AlternateContact\AlternateContact.aspx" />
+    <Content Include="WebPages\Customer\UpdateCustomer.aspx" />
+    <Content Include="WebPages\Customer\EditCustomer.aspx" />
+    <Content Include="UserControls\PolicyUC.ascx" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WebPages\Customer\AddCustomer.aspx" />
+    <Content Include="UserControls\CustomerUC.ascx" />
+    <Content Include="WebPages\PolicyType\AddPolicyType.aspx" />
+    <Content Include="WebPages\Policy\EditPolicy.aspx" />
+    <Content Include="WebPages\Policy\SearchPolicies.aspx" />
+    <Content Include="WebPages\Reports\ViewReports.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\AlternateContactUC.ascx.cs">
+      <DependentUpon>AlternateContactUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\AlternateContactUC.ascx.designer.cs">
+      <DependentUpon>AlternateContactUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CompanyUC.ascx.cs">
+      <DependentUpon>CompanyUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\CompanyUC.ascx.designer.cs">
+      <DependentUpon>CompanyUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\EmployeeUC.ascx.cs">
+      <DependentUpon>EmployeeUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\EmployeeUC.ascx.designer.cs">
+      <DependentUpon>EmployeeUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\MedicareUC.ascx.cs">
+      <DependentUpon>MedicareUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\MedicareUC.ascx.designer.cs">
+      <DependentUpon>MedicareUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PolicyTypeUC.ascx.cs">
+      <DependentUpon>PolicyTypeUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PolicyTypeUC.ascx.designer.cs">
+      <DependentUpon>PolicyTypeUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\AlternateContact\EditAlternateContact.aspx.cs">
+      <DependentUpon>EditAlternateContact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\AlternateContact\EditAlternateContact.aspx.designer.cs">
+      <DependentUpon>EditAlternateContact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\AlternateContact\SearchAlternateContact.aspx.cs">
+      <DependentUpon>SearchAlternateContact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\AlternateContact\SearchAlternateContact.aspx.designer.cs">
+      <DependentUpon>SearchAlternateContact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Company\AddCompany.aspx.cs">
+      <DependentUpon>AddCompany.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Company\AddCompany.aspx.designer.cs">
+      <DependentUpon>AddCompany.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Company\CompanyMenu.aspx.cs">
+      <DependentUpon>CompanyMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Company\CompanyMenu.aspx.designer.cs">
+      <DependentUpon>CompanyMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Company\EditCompany.aspx.cs">
+      <DependentUpon>EditCompany.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Company\EditCompany.aspx.designer.cs">
+      <DependentUpon>EditCompany.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Company\SearchCompanies.aspx.cs">
+      <DependentUpon>SearchCompanies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Company\SearchCompanies.aspx.designer.cs">
+      <DependentUpon>SearchCompanies.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Customer\AddCustomer.aspx.designer.cs">
+      <DependentUpon>AddCustomer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Customer\CustomerMenu.aspx.cs">
+      <DependentUpon>CustomerMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Customer\CustomerMenu.aspx.designer.cs">
+      <DependentUpon>CustomerMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Employee\AddEmployee.aspx.cs">
+      <DependentUpon>AddEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Employee\AddEmployee.aspx.designer.cs">
+      <DependentUpon>AddEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Employee\EditEmployee.aspx.cs">
+      <DependentUpon>EditEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Employee\EditEmployee.aspx.designer.cs">
+      <DependentUpon>EditEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Employee\EmployeeMenu.aspx.cs">
+      <DependentUpon>EmployeeMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Employee\EmployeeMenu.aspx.designer.cs">
+      <DependentUpon>EmployeeMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Employee\SearchEmployees.aspx.cs">
+      <DependentUpon>SearchEmployees.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Employee\SearchEmployees.aspx.designer.cs">
+      <DependentUpon>SearchEmployees.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Medicare\AddMedicare.aspx.cs">
+      <DependentUpon>AddMedicare.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Medicare\AddMedicare.aspx.designer.cs">
+      <DependentUpon>AddMedicare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Medicare\UpdateMedicare.aspx.cs">
+      <DependentUpon>UpdateMedicare.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Medicare\UpdateMedicare.aspx.designer.cs">
+      <DependentUpon>UpdateMedicare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\PolicyType\PolicyTypeMenu.aspx.cs">
+      <DependentUpon>PolicyTypeMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\PolicyType\PolicyTypeMenu.aspx.designer.cs">
+      <DependentUpon>PolicyTypeMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\PolicyType\SearchPolicyTypes.aspx.cs">
+      <DependentUpon>SearchPolicyTypes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\PolicyType\SearchPolicyTypes.aspx.designer.cs">
+      <DependentUpon>SearchPolicyTypes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\PolicyType\UpdatePolicyType.aspx.cs">
+      <DependentUpon>UpdatePolicyType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\PolicyType\UpdatePolicyType.aspx.designer.cs">
+      <DependentUpon>UpdatePolicyType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Policy\AddPolicy.aspx.cs">
+      <DependentUpon>AddPolicy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Policy\AddPolicy.aspx.designer.cs">
+      <DependentUpon>AddPolicy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\AlternateContact\AlternateContact.aspx.cs">
+      <DependentUpon>AlternateContact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\AlternateContact\AlternateContact.aspx.designer.cs">
+      <DependentUpon>AlternateContact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AppDriver.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClassLib\Repository\BaseRepository.cs" />
+    <Compile Include="ClassLib\Repository\CustomerRepository.cs" />
+    <Compile Include="WebPages\Customer\UpdateCustomer.aspx.cs">
+      <DependentUpon>UpdateCustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Customer\UpdateCustomer.aspx.designer.cs">
+      <DependentUpon>UpdateCustomer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClassLib\AppData.cs" />
+    <Compile Include="ClassLib\Customer.cs" />
+    <Compile Include="UserControls\CustomerUC.ascx.designer.cs">
+      <DependentUpon>CustomerUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Customer\EditCustomer.aspx.cs">
+      <DependentUpon>EditCustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Customer\EditCustomer.aspx.designer.cs">
+      <DependentUpon>EditCustomer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PolicyUC.ascx.cs">
+      <DependentUpon>PolicyUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PolicyUC.ascx.designer.cs">
+      <DependentUpon>PolicyUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Customer\AddCustomer.aspx.cs">
+      <DependentUpon>AddCustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\CustomerUC.ascx.cs">
+      <DependentUpon>CustomerUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLogin.Master.cs">
+      <DependentUpon>UserLogin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLogin.Master.designer.cs">
+      <DependentUpon>UserLogin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\PolicyType\AddPolicyType.aspx.cs">
+      <DependentUpon>AddPolicyType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\PolicyType\AddPolicyType.aspx.designer.cs">
+      <DependentUpon>AddPolicyType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Policy\EditPolicy.aspx.cs">
+      <DependentUpon>EditPolicy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Policy\EditPolicy.aspx.designer.cs">
+      <DependentUpon>EditPolicy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Policy\SearchPolicies.aspx.cs">
+      <DependentUpon>SearchPolicies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Policy\SearchPolicies.aspx.designer.cs">
+      <DependentUpon>SearchPolicies.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Reports\ViewReports.aspx.cs">
+      <DependentUpon>ViewReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Reports\ViewReports.aspx.designer.cs">
+      <DependentUpon>ViewReports.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="UserLogin.Master" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1104</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/Dev/Sample</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

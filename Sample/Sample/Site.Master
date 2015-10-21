@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Sample.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+        <div class="page">
+            <div class="header">
+                <div class="title">
+                    <h1>Sixs Senior Health Care Solutions
+                    </h1>
+                </div>
+                <div class="loginDisplay">
+                    <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                        <AnonymousTemplate>
+                            [ <a href="~/Account/Login.aspx" id="HeadLoginStatus" runat="server">Log In</a> ]
+                        </AnonymousTemplate>
+                        <LoggedInTemplate>
+                            Welcome <span class="bold">
+                                <asp:LoginName ID="HeadLoginName" runat="server" />
+                            </span>!
+                        [
+                            <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="~/Account/Logout.aspx" />
+                            ]
+                        </LoggedInTemplate>
+                    </asp:LoginView>
+                </div>
+                <div class="clear hideSkiplink">
+                    <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="true" IncludeStyleBlock="false" Orientation="Horizontal" Width="700%">
+                        <Items>
+                            <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home" />
+                            <asp:MenuItem Text="Customer Menu" NavigateUrl="~/WebPages/Customer/CustomerMenu.aspx">
+                                <asp:MenuItem NavigateUrl="~/WebPages/Customer/AddCustomer.aspx" Text="Add Customer" />
+                                <asp:MenuItem NavigateUrl="~/WebPages/Customer/EditCustomer.aspx" Text="Edit Customer" />
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Company" NavigateUrl="~/WebPages/Company/CompanyMenu.aspx">
+                                <asp:MenuItem NavigateUrl="~/WebPages/Company/AddCompany.aspx" Text="Add Company" />
+                                <asp:MenuItem NavigateUrl="~/WebPages/Company/SearchCompanies.aspx" Text="Edit Company Information" />
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Policy Type" NavigateUrl="~/WebPages/PolicyType/PolicyTypeMenu.aspx">
+                                <asp:MenuItem NavigateUrl="~/WebPages/PolicyType/AddPolicyType.aspx" Text="Add Policy Type" />
+                                <asp:MenuItem NavigateUrl="~/WebPages/PolicyType/SearchPolicyTypes.aspx" Text="Edit Policy Type" />
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Employee Manager" NavigateUrl="~/WebPages/Employee/EmployeeMenu.aspx">
+                                <asp:MenuItem NavigateUrl="~/WebPages/Employee/AddEmployee.aspx" Text="Add Employee" />
+                                <asp:MenuItem NavigateUrl="~/WebPages/Employee/SearchEmployees.aspx" Text="Edit Employee"/>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Reports" NavigateUrl="~/WebPages/Reports/ViewReports.aspx">
+                                <asp:MenuItem NavigateUrl="~/WebPages/Reports/ViewReports.aspx" Text="View Reports" />
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/About.aspx" Text="About" />
+                        </Items>
+                    </asp:Menu>
+                </div>
+            </div>
+            <div class="main">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            </div>
+            <div class="clear">
+            </div>
+        </div>
+        <div class="footer">
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,10 @@
+C:\Example\Sample\Sample\bin\Sample.dll
+C:\Example\Sample\Sample\bin\Sample.pdb
+C:\Example\Sample\Sample\obj\Debug\ResolveAssemblyReference.cache
+C:\Example\Sample\Sample\obj\Debug\Sample.dll
+C:\Example\Sample\Sample\obj\Debug\Sample.pdb
+C:\Dev\Sample\Sample\bin\Sample.dll
+C:\Dev\Sample\Sample\bin\Sample.pdb
+C:\Dev\Sample\Sample\obj\Debug\Sample.csprojResolveAssemblyReference.cache
+C:\Dev\Sample\Sample\obj\Debug\Sample.dll
+C:\Dev\Sample\Sample\obj\Debug\Sample.pdb
